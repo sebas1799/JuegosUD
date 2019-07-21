@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Juego SpeedRace">
+
+		<title>Speed Race</title>
+
+		<link rel="icon" type="image/png" href="https://cdn5.dibujos.net/dibujos/pintados/201325/coche-moderno-vehiculos-coches-pintado-por-tristan04-9824786.jpg">
+
+		<link rel="stylesheet" type="text/css" href="CSS/Estilo.css" media="screen">
+		<script type="text/javascript" src="Scripts/logica.js"></script>
+
+	</head>
+	<body onkeydown="mover(event);">
+		<h5>SpeedRace</h5>
+		<div id="contenido" class="contenido">
+			<canvas id="jcanvas" class="jcanvas">
+				
+			</canvas>
+		</div>
+		<img id="carro1" src="Imagenes/carro1.png" class="imagen">
+		<img id="carro2" src="Imagenes/carro2.png" class="imagen">
+		<img id="carro3" src="Imagenes/carro3.png" class="imagen">
+		<img id="carro4" src="Imagenes/carro4.png" class="imagen">
+		<br>
+		<div id="inicio" class="inicio">
+		<button id="botonInicio" onclick="iniciar();">
+			<h3>Jugar</h3>
+		</button>
+		<br><br>
+		<img src="Imagenes/instrucciones.jpg">
+	</div>
+	</body>
+</html>
