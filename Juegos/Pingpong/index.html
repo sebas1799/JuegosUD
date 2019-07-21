@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Juego Ping-Pong">
+
+	<title>Ping-Pong</title>
+
+	<link rel="icon" type="image/png" href="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/10870.png"><!--Para el icono-->
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+	<script type="text/javascript" src="Scripts/logica.js"></script>
+</head>
+<body onkeydown="moverbarra(event);" onkeyup="detenerbarra(event);">
+	<h1>Ping-Pong</h1>
+	<div class="contenido" id="contenido">
+		<canvas class="canvas" id="canvas">
+			No soporta canvas
+		</canvas>
+	</div>
+	<br>
+	<div id="inicio" class="inicio">
+		<button id="botonInicio" onclick="iniciar();">
+			<h3>Jugar</h3>
+		</button>
+	</div>
+	<br><br>
+	<img src="Imagenes/barraIzq.png" id="barraIzqimagen" class="imagen">
+	<img src="Imagenes/bola.png" id="bolaimagen" class="imagen">
+	<img src="Imagenes/barraDer.png" id="barraDerimagen" class="imagen">
+	<img src="Imagenes/instrucciones.jpg">
+
+</body>
+</html>
