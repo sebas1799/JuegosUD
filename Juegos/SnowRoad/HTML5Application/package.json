@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "HTML5Application",
     "version": "1.0.0",
@@ -6,3 +7,13 @@
     "contributors": [],
     "dependencies": {}
 }
+=======
+{
+    "name": "HTML5Application",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Juan David",
+    "contributors": [],
+    "dependencies": {}
+}
+>>>>>>> 09cc828c23c807f6933f74255ff6df1e678d744e
