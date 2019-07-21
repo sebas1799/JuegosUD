@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            window.onload = function(){
+                document.onkeydown = chars;
+            }
+            
+            var horizontal = 0;
+            var vertical = 0;
+            
+            function chars(evento){
+                if(window.event)
+                    evento = window.event;
+//                    document.getElementById("string").innerHTML = evento.keyCode;
+                    movimiento(evento.keyCode)
+            }
+                   
+            function movimiento(e){
+                
+                if(e==39){
+                    document.getElementById("string").innerHTML = horizontal;
+                    horizontal += 10;
+                    document.getElementById("morraco").style.marginLeft = horizontal+"px" ;
+                }
+                
+                if(e==37){
+                    horizontal -= 10;
+                    document.getElementById("string").innerHTML = horizontal;
+                    document.getElementById("morraco").style.marginLeft = horizontal+"px" ;
+                }
+                
+                if(e==38){
+                    document.getElementById("string").innerHTML = vertical;
+                    vertical -= 10;
+                    document.getElementById("morraco").style.marginTop = vertical+"px" ;
+                }
+                
+                if(e==40){
+                    document.getElementById("string").innerHTML = vertical;
+                    vertical += 10;
+                    document.getElementById("morraco").style.marginTop = vertical+"px" ;
+                }
+            }
+            
+  
+    
+        </script>
+        <title>Mover objeto JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <span id="string"></span>
+        <div id="morraco" style="width: 100px; height: 100px; background: black"></div>
+    </body>
+    
+</html>
