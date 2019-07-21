@@ -1,0 +1,11 @@
+body {
+	
+ background: white no-repeat right center;
+ text-align: center;
+}
+
+#reloj {
+	font-size: 30px;
+	color: #red;
+}
+
