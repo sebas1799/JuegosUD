@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Gallina Cruzando la Calle">
+		<meta name="keywords" content="canvas colisiones jquery ajax">
+		<meta name="author" content="Gabriel Castillo, Omar Espitia y Camilo Martinez">
+		<title>La Gallina come Maiz</title>
+
+		<link rel="icon" href="imagenes/Chicken_Icono.png">
+
+		<link rel="stylesheet" type="text/css" href="estilos/default.css" media="screen">
+		<!--Scripts para la funcionalidad del juego-->
+		<script src="js/jquery-1.11.0.min.js" language="JavaScript1.2"></script>
+
+		<script src="js/gallina.js" language="JavaScript1.2"></script>
+		<script src="js/maiz.js" language="JavaScript1.2"></script>
+		<script src="js/carro.js" language="JavaScript1.2"></script>
+		<script src="js/script.js" language="JavaScript1.2"></script>
+
+	</head>
+	<body>
+		<!--Esta es la seccion del juego-->
+		<section>
+			<canvas id="mi_canvas" width="640" height="560">
+				Tu navegador no es compatible
+			</canvas>
+		</section>
+
+		<!--Este es el cuadro de Instrucciones e Inicio-->
+		<section>
+			<!--Este es el desplegable de Instrucciones y Creditos-->
+			<div id="popup" style="display: none;">
+				<div class="content-popup">
+					<div class="close"><a href="#" id="close"><img src="imagenes/close.png"/></a></div>
+					<div>
+					   <h2>Teclas de juego</h2>
+					   <img src="imagenes/teclado.png"/>
+					   <h2>Creditos</h2>
+						 <p>Juan Camilo Martinez</p>
+						 <p>Omar Alejandro Espitia Sanchez</p>
+						 <p>Gabriel Esteban Castillo Ramirez</p>
+						 <p>Ref: Alejandro Paolo Daza Corredor</p>
+						<p>UNIR</p>
+						<p>Computación en el Cliente</p>
+					</div>
+				</div>
+			</div>
+
+			<h1>La Gallina come Maiz</h1>
+			<button id="instrucciones">Ver Instrucciones</button><br>
+			<button id="iniciar">Iniciar</button>
+		</section>
+
+		<!--Audios propios de la gallina-->
+		<audio id="nuevaVida">
+			<source src="sonidos/Chicken_Inicio.ogg" type="audio/ogg">
+			<source src="sonidos/Chicken_Inicio.mp3" type="audio/mpeg">
+			<source src="sonidos/Chicken_Inicio.wav" type="audio/wav">
+			Tu navegador no es compatible
+		</audio>
+
+		<audio id="pierde">
+			<source src="sonidos/Chicken_pierde_vida.ogg" type="audio/ogg">
+			<source src="sonidos/Chicken_pierde_vida.mp3" type="audio/mpeg">
+			<source src="sonidos/Chicken_pierde_vida.wav" type="audio/wav">
+			Tu navegador no es compatible
+		</audio>
+
+		<audio id="come">
+			<source src="sonidos/Chicken_come.ogg" type="audio/ogg">
+			<source src="sonidos/Chicken_come.mp3" type="audio/mpeg">
+			<source src="sonidos/Chicken_come.wav" type="audio/wav">
+			Tu navegador no es compatible
+		</audio>
+
+		<!--Imagenes para la gallina-->
+		<img id="abajo" src="imagenes/Chicken1.png"/>
+		<img id="izquierda" src="imagenes/Chicken2.png"/>
+		<img id="derecha" src="imagenes/Chicken3.png"/>
+		<img id="arriba" src="imagenes/Chicken4.png"/>
+		<img id="muerto" src="imagenes/tumba.png"/>
+
+		<!--Imagenes para los autos-->
+		<img id="auto_1d" src="imagenes/Auto1_der.png"/>
+		<img id="auto_1i" src="imagenes/Auto1_izq.png"/>
+		<img id="auto_2d" src="imagenes/Auto2_der.png"/>
+		<img id="auto_2i" src="imagenes/Auto2_izq.png"/>
+		<img id="auto_3d" src="imagenes/Auto3_der.png"/>
+		<img id="auto_3i" src="imagenes/Auto3_izq.png"/>
+		<img id="auto_4d" src="imagenes/Auto4_der.png"/>
+		<img id="auto_4i" src="imagenes/Auto4_izq.png"/>
+		<img id="auto_5d" src="imagenes/Auto5_der.png"/>
+		<img id="auto_5i" src="imagenes/Auto5_izq.png"/>
+		<img id="auto_6d" src="imagenes/Auto6_der.png"/>
+		<img id="auto_6i" src="imagenes/Auto6_izq.png"/>
+		<img id="auto_7d" src="imagenes/Auto7_der.png"/>
+		<img id="auto_7i" src="imagenes/Auto7_izq.png"/>
+
+		<!--Imagen para la semilla-->
+		<img id="maiz" src="imagenes/maiz.png"/>
+
+	</body>
+</html>
